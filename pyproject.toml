@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "tunephi"
+version = "0.1.0"
+description = ""
+authors = ["MLS <mls@damvad.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+boto3 = "^1.34.58"
+sagemaker = "^2.212.0"
+wandb = "^0.16.4"
+datasets = "^2.18.0"
+torch = "^2.2.1"
+transformers = "^4.38.2"
+urllib3 = "<2"
+openai = "^1.13.3"
+datamapplot = "^0.2.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.3"
+datashader = "^0.16.0"
+bertopic = "^0.16.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
